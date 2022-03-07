@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.grid-container{
+    display: grid;
+   /* grid-template-columns: minmax(auto,50%) 1fr 2em; สร้าง colun :จำนวนและขนาด
+    grid-template-rows: repeat(2,50px); สร้าง row :จำนวนและขนาด
+    grid-gap:100px 2em; ระยะห่างช่องcolum row*/
+    grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr [col-3-star] 1fr [col-3-end];
+    grid-template-rows: [row-star row-1-start] 100px [row-2-start row-2-end] 100px [col-2-end] ; 
+    background: green;
+
+}
+/*จัดตำแหน่ง*/
+.grid1{
+   /* grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2 ;
+    grid-row-end:3 ;*/
+    
+    /*grid-column: 3/4;
+    grid-row: 1/2;*/
+    /*grid-area: [grid-row-start]/[grid-colunm-staat]/[grid-row-end]/[grid-colunm-end];*/
+    /*grid-area: 1/3/2/4; มีผลเหมือน2อันบน*/
+
+    grid-column: col-2-start/col-3-star ;
+    grid-row: row-2-start/row-2-end;
+}
+.grid-items{
+
+    border: 1px solid #fff;
+}

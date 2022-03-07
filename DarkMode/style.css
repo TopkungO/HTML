@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+:root {
+  --primary-color: rgb(255, 92, 92);
+  --text-color: rgb(66, 66, 66);
+  --text-color-second: rgba(66, 66, 66, 0.7);
+  --background: rgb(255, 255, 255);
+}
+[data-theme="dark"] {
+  --primary-color: orange;
+  --text-color: white;
+  --text-color-second: rgba(255, 255, 255, 0.8);
+  --background: #121213;
+}
+body {
+  background-color: var(--background);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%2307e6f0' fill-opacity='0.4' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+  margin: 0;
+  color: var(--text-color);
+}
+* {
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 100px;
+  margin-bottom: 0;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h2 {
+  color: var(--text-color-second);
+  font-size: 30px;
+  font-weight: normal;
+}
+.title-group {
+  text-align: center;
+}
+nav {
+  position: fixed;
+  z-index: 10;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 25px;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.5);
+}
+a {
+  margin-right: 25px;
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+}
+a:hover {
+  color: var(--text-color);
+  border-bottom: 3px solid;
+}
+.theme-switch-container {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  right: 25px;
+  top: 10px;
+}
+.theme-switch-container span {
+  margin-right: 10px;
+  /* font-size: large; */
+}
+.toggle-text {
+  position: relative;
+  top: -4px;
+  right: 5px;
+  color: var(--text-color);
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+  top: 10px;
+}
+.theme-switch input {
+  display: none;
+}
+.slider {
+  background: var(--primary-color);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+.slider::before {
+  background: #fff;
+  content: "";
+  bottom: 4px;
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 50px;
+}
+.slider::before {
+  border-radius: 50px;
+}
+.fas {
+  font-size: 30px;
+  margin-right: 5px;
+}
+.fab {
+  font-size: 100px;
+  margin-right: 50px;
+  color: var(--primary-color);
+}
+.fab:hover {
+  color: var(--text-color);
+}
+.project-container {
+  display: flex;
+}
+.image-container {
+  border: 1px solid var(--text-color-second);
+  border-radius: 10px;
+  box-shadow: #000000 0 5px 20px 1px;
+  padding: 10px 20px;
+  background: var(--background);
+  margin-right: 25px;
+  width: auto;
+}
+img {
+  width: 200px;
+  height: 200px;
+}

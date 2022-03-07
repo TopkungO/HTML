@@ -1,0 +1,32 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;/*todo:row-reverse คือกลับหัว coloumn เรียงแนวตั้ง*/
+    flex-wrap: nowrap;
+    /*flex-flow: row wrap; ใช้2อันพร้อมกัน*/
+    /*justify-content: flex-end; ใช้กลับrow between ทำให้ระยะเท่ากัน*/
+    /*align-items: center; ใช้กลับcolumn*/
+    /*align-content: center;*/
+}   
+.flex-items-1,.flex-items-2,.flex-items-3,.flex-items-4,.flex-items-5{
+    width: 150px;
+    height: 150px;
+    background: #ccc;
+    margin: 10px;
+}
+.flex-items-1{
+    order: 2;
+}
+.flex-items-2{
+    order: 4;
+    flex-grow: 1;
+}
+.flex-items-3{
+    order: 5;
+}
+.flex-items-4{
+    order: 3;
+    flex-shrink:2 ;
+}
+.flex-items-5{
+    order: 1;
+}

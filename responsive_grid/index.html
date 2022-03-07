@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Grid CSS</title>
+
+    <script>
+        $(document).ready(function(){
+            $('.humburger').on('click',function(){
+                $(".nav-grid").toggleClass("open");
+            });
+        });
+
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+    </script>
+</head>
+<body>
+    
+    <header>
+        <div class="humburger" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        <nav>
+            <div class="container">
+                <div class="nav-grid">
+                    <div class="logo">
+                        <h1>Astounding</h1>
+                        <span>Free PSD Mebsite Template</span>
+                    </div>
+        
+                    <div class="menu">
+                        <ul class="menu">
+                            <li><a href="">home</a></li>
+                            <li><a href="">atyledemo</a></li>
+                            <li><a href="">Fullwidth</a></li>
+                            <li><a href="">Dropdown</a></li>
+                            <li><a href="">Portfolio</a></li>
+                            <li><a href="">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="content">
+                <div class="content-heding">
+                    <h1>A Massive <br>
+                        Title that User <br> 
+                        Loads of Room</h1>
+                </div>
+                <div class="content-services">
+                    <div class="content-services-grid">
+
+                        <div class="content-services-item">
+                            <i class="fa fa-address-book" aria-hidden="true"></i>
+                            <h2>services Title 1</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, eum aut voluptate voluptatibus numquam tenetur iste, nobis animi similique officia aliquid placeat ab distinctio eveniet sapiente. Sapiente odit nihil quo.</p>
+                        </div>
+
+                        <div class="content-services-item">
+                            <i class="fa fa-bandcamp" aria-hidden="true"></i>
+                            <h2>services Title 2 </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, eum aut voluptate voluptatibus numquam tenetur iste, nobis animi similique officia aliquid placeat ab distinctio eveniet sapiente. Sapiente odit nihil quo.</p>
+                        </div>
+
+                        <div class="content-services-item">
+                            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                            <h2>services Title 3 </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, eum aut voluptate voluptatibus numquam tenetur iste, nobis animi similique officia aliquid placeat ab distinctio eveniet sapiente. Sapiente odit nihil quo.</p>
+                        </div>
+
+                        <div class="content-services-item">
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                            <h2>services Title 3 </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, eum aut voluptate voluptatibus numquam tenetur iste, nobis animi similique officia aliquid placeat ab distinctio eveniet sapiente. Sapiente odit nihil quo.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="content-meet">
+                    <h1>Meet Our team</h1>
+                </div>
+
+                <div class="content-team">
+                    <div class="content-team-grid">
+
+                        <div class="content-team-item">
+                            <img src="https://via.placeholder.com/225" alt="">
+                            <h2>Your name</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus at voluptates sequi id earum, adipisci natus. Necessitatibus at nostrum temporibus culpa odit, saepe quaerat ad ullam labore nulla praesentium. Non.</p>
+                            <div class="cr">
+                                <a href="#">View Profile>></a>
+                            </div>
+                        </div>
+
+                        <div class="content-team-item">
+                            <img src="https://via.placeholder.com/225" alt="">
+                            <h2>Your name</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus at voluptates sequi id earum, adipisci natus. Necessitatibus at nostrum temporibus culpa odit, saepe quaerat ad ullam labore nulla praesentium. Non.</p>
+                            <div class="cr">
+                                <a href="#">View Profile>></a>
+                            </div>
+                        </div>
+
+                        <div class="content-team-item">
+                            <img src="https://via.placeholder.com/225" alt="">
+                            <h2>Your name</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus at voluptates sequi id earum, adipisci natus. Necessitatibus at nostrum temporibus culpa odit, saepe quaerat ad ullam labore nulla praesentium. Non.</p>
+                            <div class="cr">
+                                <a href="#">View Profile>></a>
+                            </div>
+                        </div>
+
+                        <div class="content-team-item">
+                            <img src="https://via.placeholder.com/225" alt="">
+                            <h2>Your name</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus at voluptates sequi id earum, adipisci natus. Necessitatibus at nostrum temporibus culpa odit, saepe quaerat ad ullam labore nulla praesentium. Non.</p>
+                            <div class="cr">
+                                <a href="#">View Profile>></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-item">
+                    <h3>from the blog</h3>
+                    <h4>Posttitle</h4>
+                    <span class="admit"><a href="#">Admit</a>,domainname.com</span><br>
+                    <span class="date">4/9/2564</span>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, optio.</p>
+                    <a href="#">Read more</a>
+                </div>
+
+                <div class="footer-item">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-item">
+                    <h3>Last tweets</h3>
+                    <p><a href="#">@namehere</a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, officiis.</p>
+                    
+                    <p><a href="#">@namehere</a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, officiis.</p>
+                </div>
+
+                <div class="footer-item">
+                    <h3>contact US</h3>
+                    <input type="text" name="username" placeholder="Full name">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="mess" id=""></textarea>
+                    <input type="submit" value="submit">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyridht">
+        <div class="container">
+            <div class="coppyright-grid">
+                <div class="copytext">
+                    <p>coppy....</p>
+                </div>
+                <div class="credits">
+                    <p>Template by od Templates</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

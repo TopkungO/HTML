@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sideber_Menu</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header start -->
+        <div class="header">
+        <!-- header menu -->
+            <div class="header-menu">
+                <div class="title">coding <span>Snow</span></div>
+
+                <div class="sideber-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-bell"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-power-off"></i></a>
+                    </li>
+                </ul>
+            </div>
+        <!-- end header -->
+        </div>
+      <div class="sideber">
+        <div class="sideber-menu">
+          <center class="profile">
+            <img
+              src="https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=311&q=80"
+              alt=""
+              style="width: 150px; height: 150"
+            />
+            <p>top</p>
+          </center>
+          <li class="item">
+            <a href="" class="menu-btn"
+              ><i class="fas fa-destop"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <!-- li1 -->
+          <li class="item" id="profile">
+            <a href="#profile" class="menu-btn">
+              <i class="fas fa-user-circle"></i>
+              <span>Profile</span>
+              <i class="fas fa-chevron-down drop-down"></i>
+            </a>
+            <div class="sub-menu">
+              <a href="#"><i class="fas fa-image"></i><span>Picture</span></a>
+              <a href=""
+                ><i class="fas fa-address-card"></i><span>Info</span></a
+              >
+            </div>
+          </li>
+          <!-- li2 -->
+          <li class="item" id="messages">
+            <a href="#messages" class="menu-btn">
+              <i class="fas fa-envelope"></i>
+              <span>messages</span>
+              <i class="fas fa-chevron-down drop-down"></i>
+            </a>
+            <div class="sub-menu">
+              <a href="#"><i class="fas fa-envelope"></i><span>new</span></a>
+              <a href=""
+                ><i class="fas fa-envelope-square"></i><span>Sent</span></a
+              >
+              <a href=""
+                ><i class="fas fa-envelope-circle"></i><span>Spam</span></a
+              >
+            </div>
+          </li>
+          <!-- li3 -->
+          <li class="item" id="Settings">
+            <a href="#Settings" class="menu-btn">
+              <i class="fas fa-cog"></i>
+              <span>Settings</span>
+              <i class="fas fa-chevron-down drop-down"></i>
+            </a>
+            <div class="sub-menu">
+              <a href="#"><i class="fas fa-lock"></i><span>password</span></a>
+              <a href=""
+                ><i class="fas fa-language"></i><span>language</span></a
+              >
+            </div>
+          </li>
+
+          <li class="item">
+            <a href="" class="menu-btn"
+              ><i class="fas fa-info-circle"></i>
+              <span>About</span>
+            </a>
+          </li>
+        </div>
+
+      </div>
+    </div>
+    <!-- end sidebar -->
+    <!-- main container start -->
+    <div class="main-container">
+
+    </div>
+    <!-- main container end -->
+    <!-- end wraper -->
+
+    <script>
+        $(document).ready(function(){
+			$(".sidebar-btn").click(function(){
+				$(".wrapper").toggleClass("collapse");
+			});
+		});
+    </script>
+  </body>
+</html>
